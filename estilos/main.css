@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.grid_All {  display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 200px 170px;
+    grid-auto-columns: 1fr;
+    grid-gap: 20px;
+    /* gap: 0px 0px; */
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sobre-mi proyectos proyectos"
+      "sobre-mi proyectos proyectos"
+      "sobre-mi Conocimientos Conocimientos";
+}
+
+.main_all{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+}
+  
+.conocimientos{ 
+    grid-area: Conocimientos;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5); 
+}
+  
+.proyectos_all{ 
+    grid-area: proyectos;
+    background-color: rgb(8, 8, 8);
+    background-color: rgb(20, 20, 20);
+}
+  
+.presentacion{ 
+    grid-area: sobre-mi; 
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    
+}
+
+.proyecto_uno{
+    height: 300px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    
+    overflow-y: scroll;
+}
+
+.proyecto_uno::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgb(20, 20, 20);
+}
+
+.proyecto_uno::-webkit-scrollbar-thumb{
+    background-color: rgb(5, 175, 175);
+    border-radius: 50px;
+}
+
+.proyectos_img{
+    width: 820px;
+ 
+}
+
+.titulo_proyectos{
+    font-size: 20px;
+    color: #fff;
+    padding: 15px;
+}
+
+.proyecto_uno img{
+    width: 100%;
+    margin-top: 15px;
+}
+.proyecto_uno img:hover{
+    box-shadow: 0 0 6px rgb(5, 175, 175);
+    transition: .5s;
+    cursor: pointer;
+    
+}
+
+.imagen_presentacion{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+}
+
+.boton_descarga{
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+.copy{
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.boton_descarga h3{
+    color: rgb(255, 255, 255) ;
+}
+
+.boton_descarga p{
+    font-size: 18px;
+    padding-top: 5px;
+    color: rgb(5, 175, 175);
+    /* margin-bottom: 25px; */
+    letter-spacing: 2px;
+}
+
+.boton_descarga {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton_descarga a{
+    text-decoration: none;
+    color: rgb(5, 175, 175);
+    padding-top: 5px;
+}
+
+.boton_cv{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(5, 175, 175);
+    margin-top: 5px;
+    width: 190px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(8, 8, 8);
+    letter-spacing: 2px;
+}
+
+.img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    position: center;
+}
+
+.conocimientos_uno h3{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    /* padding: 20px; */
+}
+
+.img_conocimientos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_conocimientos img{
+    width: 90px;
+    padding: 10px;
+}
+
+.git{
+    border-radius: 50%;
+    background-color: rgb(5, 175, 175);
+}
