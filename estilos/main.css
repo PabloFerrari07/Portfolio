@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-.grid_All {  display: grid;
+.grid_All {  
+    display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 200px 200px 170px;
     grid-auto-columns: 1fr;
@@ -18,7 +19,8 @@
 }
 
 .main_all{
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +135,7 @@
     text-decoration: none;
     color: rgb(5, 175, 175);
     margin-top: 5px;
-    width: 190px;
+    width: 19   0px;
     padding: 20px 20px 20px 20px;
     background-color: rgb(8, 8, 8);
     letter-spacing: 2px;
@@ -170,4 +172,122 @@
 .git{
     border-radius: 50%;
     background-color: rgb(5, 175, 175);
+}
+
+
+@media only screen and (max-width:1200px){
+    .grid_All{
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas:
+        "sobre-mi sobre-mi sobre-mi"
+        "proyectos proyectos proyectos"
+        "Conocimientos Conocimientos Conocimientos ";
+        grid-gap: 25px;
+    }
+
+    .presentacion{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .boton_descarga{
+        font-size: 12px;
+    }
+
+    .proyectos_all{
+        overflow: hidden;
+    }
+
+
+    .imagen_presentacion{
+        flex-direction: row;
+        display: flex;
+    }
+    .imagen_presentacion h1{
+        font-size: 20px;
+    }
+
+    .img img{
+        height: 70px;
+        width: 70px;
+    }
+
+    .boton_cv{
+        width: 150px;
+        height: 70px;
+        font-size: 12px;
+    }
+    .copy{
+        padding-bottom: 0;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .boton_descarga{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width:950px) {
+        .grid_All{
+            grid-template-columns: 250px 250px 250px;
+            grid-template-rows: 180px 180px 180px;
+        }
+
+        .copy{
+            font-size: 13px;
+        }
+
+        .boton_descarga p{
+            font-size: 13px;
+        }
+
+        .boton_cv{
+            width: 120px;
+            height: 50px;
+        }
+}
+
+@media only screen and (max-width:830px) {
+    .boton_cv{
+        height: 40px;
+    }
+
+    .img_conocimientos img{
+        width: 70px;
+    }
+    .grid_All{
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 190px 190px 190px;
+    }
+}
+
+
+@media only screen and (max-width:800px) {
+    .grid_All{  
+        grid-template-rows: 180px 180px 260px;
+        grid-gap: 5px;
+        grid-template-areas:
+        "sobre-mi sobre-mi Conocimientos"
+        "sobre-mi sobre-mi Conocimientos"
+        "proyectos proyectos proyectos ";;
+    }
+
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copy{
+        padding-left: 25px;
+    }
+
+    .imagen_presentacion{
+      justify-content: space-evenly;
+    }
+
+    .img_conocimientos{
+        flex-wrap: wrap;
+    }
 }
