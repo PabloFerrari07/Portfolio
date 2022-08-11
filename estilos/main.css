@@ -208,9 +208,9 @@
         font-size: 20px;
     }
 
-    .img img{
-        height: 70px;
-        width: 70px;
+    .img{
+        height: 140px;
+        width: 140px;
     }
 
     .boton_cv{
@@ -266,28 +266,44 @@
 
 @media only screen and (max-width:800px) {
     .grid_All{  
-        grid-template-rows: 180px 180px 260px;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 180px 280px 180px;
         grid-gap: 5px;
         grid-template-areas:
-        "sobre-mi sobre-mi Conocimientos"
-        "sobre-mi sobre-mi Conocimientos"
-        "proyectos proyectos proyectos ";;
+        "sobre-mi sobre-mi sobre-mi"
+        "proyectos proyectos proyectos"
+        "Conocimientos Conocimientos Conocimientos ";
+        grid-gap: 20px;
     }
 
-    .presentacion{
-        display: flex;
-        flex-direction: column;
+    .img_conocimientos img{
+        width: 60px;
+        height: 60px;
+       
     }
+  
+}
 
-    .copy{
-        padding-left: 25px;
+@media only screen and (min-width:600px) and (max-width:799px) {
+    .grid_All{
+        grid-template-columns: 230px 230px 230px;
+        grid-template-rows: 180px 280px 150px;
     }
+}
 
-    .imagen_presentacion{
-      justify-content: space-evenly;
+@media only screen and (min-width:600px) and (max-width:699px) {
+    .grid_All{
+        grid-template-columns: 190px 170px 190px;
+        grid-template-rows: 140px 220px 140px;
     }
 
     .img_conocimientos{
+        justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+    
+    .boton_cv{
+        width: 120px;
+        height: 50px;
     }
 }
