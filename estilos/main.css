@@ -465,3 +465,13 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width:340px) {
+    .grid_All{
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 290px 240px 200px;
+    }
+    #titulo_conocimientos{
+        font-size: 15px;
+    }
+}
