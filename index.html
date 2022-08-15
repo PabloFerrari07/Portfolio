@@ -15,7 +15,7 @@
 <body>
     <main class="main_all">
         <div class="grid_All">
-            <div class="presentacion">
+            <div class="presentacion " id="presentacion">
                 <div class="imagen_presentacion">
                     <img src="imagenes/foto-mia.jpg" class="img">
                     <div class="presentacion_parrafo">
@@ -32,8 +32,12 @@
                     <a href="https://drive.google.com/file/d/1x5InFFoLhb6Z7PVgkV0J2QGYXLOcXgjk/view?usp=sharing" target="_blank" class="boton_cv"> Descargar cv</a>
                 </div>
             </div>
-            <div class="proyectos_all">
-                <h3 class="titulo_proyectos">Mis proyectos</h3>
+            <div class="proyectos_all " id="proyectos">
+                <div class="proyecto_dark">
+                    <h3 class="titulo_proyectos">Mis proyectos</h3>
+                    <button id="boton_dark" class="boton_dark">Modo oscuro</button>
+
+                </div>
                 <div class="proyecto_uno">
                     <div class="proyectos_img">
                         <a href="https://github.com/PabloFerrari07/ProyectoCarrito" target="_blank">
@@ -46,7 +50,7 @@
                 </div>
               
             </div>
-            <div class="conocimientos">
+            <div class="conocimientos " id="conocimientos">
                 <div class="conocimientos_uno">
                     <h3 id="titulo_conocimientos">Mis conocimientos</h3>
                     <div class="img_conocimientos">
@@ -62,6 +66,6 @@
             </div>
         </div>
     </main>
-
+    <script src="script/main.js"></script>
 </body>
 </html>

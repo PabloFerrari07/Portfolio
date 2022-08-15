@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -64,6 +65,22 @@
 .proyecto_uno::-webkit-scrollbar{
     width: 7px;
     background-color: rgb(20, 20, 20);
+}
+
+.proyecto_dark{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton_dark{
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    color: rgb(20, 20, 20);
+    border-radius: 2px;
+    margin: 10px;
 }
 
 .proyecto_uno::-webkit-scrollbar-thumb{
@@ -177,6 +194,8 @@
 }
 
 
+
+
 @media only screen and (max-width:1200px){
     .grid_All{
         grid-template-columns: 300px 300px 300px;
@@ -249,6 +268,11 @@
             width: 120px;
             height: 50px;
         }
+}
+
+.dark{
+    background-color: rgb(143, 12, 12);
+    color: rgb(63, 3, 3);
 }
 
 @media only screen and (max-width:830px) {
