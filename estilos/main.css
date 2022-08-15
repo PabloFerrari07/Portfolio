@@ -434,4 +434,34 @@
         height: 60px;
     }
 
+    .boton_descarga p{
+        font-size: 10px;
+    }
+
+    .boton_cv a{
+        font-size: 10px;
+    }
+
+    .boton_cv{
+        font-size: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width:470px) {
+    .presentacion{
+        overflow: hidden;
+       
+        flex-direction: column;
+    }
+    .grid_All{
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 290px 240px 200px;
+    }
+
+
+    .proyectos_img{
+        width: 100%;
+    }
 }
