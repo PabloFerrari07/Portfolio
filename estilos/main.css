@@ -11,7 +11,6 @@
     grid-template-rows: 200px 200px 170px;
     grid-auto-columns: 1fr;
     grid-gap: 20px;
-    /* gap: 0px 0px; */
     grid-auto-flow: row;
     grid-template-areas:
       "sobre-mi proyectos proyectos"
@@ -20,7 +19,7 @@
 }
 
 .main_all{
-    /* height: 100vh; */
+
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -32,8 +31,6 @@
     grid-area: Conocimientos;
     color: #fff;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-
-    font-weight: 600;
     background-color: rgb(20, 20, 20);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5); 
     border-radius: 10px;
@@ -42,7 +39,7 @@
   
 .proyectos_all{ 
     color: #fff;
-    font-weight: 600;
+
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 
     grid-area: proyectos;
@@ -55,7 +52,7 @@
     grid-area: sobre-mi; 
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
     color: #fff;
-    font-weight: 600;
+    
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
     display: flex;
     flex-direction: column;
@@ -68,7 +65,7 @@
 .proyecto_uno{
     height: 300px;
     width: 100%;
-    /* color: #fff; */
+
     overflow: hidden;
     
     overflow-y: scroll;
@@ -107,7 +104,6 @@
 
 .titulo_proyectos{
     font-size: 20px;
-    /* color: #fff; */
     padding: 15px;
 }
 
@@ -123,7 +119,7 @@
 }
 
 .imagen_presentacion{
-    /* color: rgb(255, 255, 255); */
+
     font-size: 20px;
 
 }
@@ -138,15 +134,11 @@
     font-size: 15px;
 }
 
-.boton_descarga h3{
-    /* color: rgb(255, 255, 255) ; */
-}
-
 .boton_descarga p{
     font-size: 18px;
     padding-top: 5px;
     color: rgb(5, 175, 175);
-    /* margin-bottom: 25px; */
+
     letter-spacing: 2px;
 }
 
@@ -181,12 +173,12 @@
 }
 
 .conocimientos_uno h3{
-    /* color: #fff; */
+
     font-size: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
-    /* padding: 20px; */
+   
 }
 
 .img_conocimientos{
@@ -209,6 +201,7 @@
 .dark{
     background-color: rgb(255, 255, 255);
     color: rgb(27, 27, 27);
+    font-weight: 600;
 }
 
 .change{
