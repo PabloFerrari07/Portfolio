@@ -197,6 +197,10 @@
     background-color: rgb(5, 175, 175);
 }
 
+.proyectos_img{
+    width: 100%;
+}
+
 
 .dark{
     background-color: rgb(255, 255, 255);
@@ -500,9 +504,9 @@
     }
 
 
-    .proyectos_img{
+    /* .proyectos_img{
         width: 100%;
-    }
+    } */
 }
 
 @media only screen and (max-width:340px) {
