@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Hero from './components/hero';
+import NavLateral from './components/NavLateral';
 function App() {
   return (
     <div className="App">
-      <h1 className='text-3xl text-green-700'>HELLO?</h1>
+      <NavLateral/>
       <Hero/>
     </div>
   );
